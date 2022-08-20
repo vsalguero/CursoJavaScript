@@ -10,3 +10,18 @@
     margin: 10px;
     padding: 10px;
 }
+
+.nav{
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    margin:10px 0;
+    font-weight: bold;
+    font-family: Arial;
+    padding: 6px;
+}
+
+.nav li{
+    padding: 6px;
+    display:inline;
+    margin-right: 10px;
+}
