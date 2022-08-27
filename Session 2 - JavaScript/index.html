@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      var x = 10;
+      let y = "Hola";
+      const z = 10.4;
+      p = "Otra cadena";
+      const variable = { Atributo1: "Valor1", Atributo2: "Valor2" };
+
+      //console.log(typeof x);
+      //console.log(typeof y);
+      //console.log(z);
+      //console.log(p);
+
+      // Ejemplo 1
+      var monto = 50; //prompt("Digite el monto de la compra");
+      var descuento = monto * 0.1;
+      console.log("El total a pagar: ", monto - descuento);
+
+      // Ejemplo 2
+      var n1 = 10; //prompt("Digite el primer número");
+      var n2 = 16; //prompt("Digite el segundo número");
+      if (Number(n1) > Number(n2)) {
+        console.log("El mayor es n1: ", n1);
+      } else {
+        console.log("El mayor es n2: ", n2);
+      }
+
+      //Ejemplo 3
+      var anio = 2022; //prompt("Digite el año");
+      if (
+        (anio % 4 == 0 && anio % 100 != 0) ||
+        (anio % 4 == 0 && anio % 400 == 0)
+      ) {
+        console.log("Es bisiesto");
+      } else {
+        console.log("No es bisiesto");
+      }
+
+      //Ejemplo 4
+      var n1, n2, n3, my, cn, mn;
+      n1 = 5; // Number(prompt("Digite el primer número: "));
+      n2 = 10; //Number(prompt("Digite el segundo número: "));
+      n3 = 4; //Number(prompt("Digite el tercer número: "));
+      if (n1 > n2) {
+        my = n1;
+        mn = n2;
+      } else {
+        my = n2;
+        mn = n1;
+      }
+      if (my > n3) {
+        if (mn > n3) {
+          cn = mn;
+          mn = n3;
+        } else {
+          cn = n3;
+        }
+      } else {
+        cn = my;
+        my = n3;
+      }
+      console.log("El mayor es ", my);
+      console.log("El central es  ", cn);
+      console.log("El menor es ", mn);
+
+      //Ejemplo 5
+      var num = 7; //prompt("Digite un número: ");
+      switch (num) {
+        case "1":
+          console.log("Lunes");
+          break;
+        case "2":
+          console.log("Martes");
+          break;
+        case "3":
+          console.log("Miércoles");
+          break;
+        case "4":
+          console.log("Jueves");
+          break;
+        case "5":
+          console.log("Viernes");
+          break;
+        case "6":
+          console.log("Sábado");
+          break;
+        case "7":
+          console.log("Domingo");
+          break;
+        default:
+          console.log("Error, el día no está definido");
+          break;
+      }
+
+      //Ejemplo 6
+      var num = 6; //prompt("Digite un número: ");
+
+      for (let i = 1; i <= 10; i++) {
+        console.log(num + " x " + i + " = " + num * i + "\n");
+      }
+
+      //Ejemplo 7
+      num1 = Number(prompt("Digite el primer número: "));
+      num2 = Number(prompt("Digite el segundo número: "));
+      var result = 0;
+      while (num1 > 0) {
+        if (num1 % 2 != 0) result += num2;
+        num1 = Math.trunc(num1 / 2);
+        num2 = num2 * 2;
+      }
+      console.log("El resultado es ", result);
+    </script>
+  </body>
+</html>

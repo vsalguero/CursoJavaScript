@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript functions</title>
+  </head>
+  <body>
+    <script>
+      function Example(a) {
+        console.log("Hello, I'm ", a);
+      }
+
+      const Suma = (num1, num2) => {
+        var n;
+        n = num1 + num2;
+        return n;
+      };
+      var variable = Example("Vladimir");
+      variable;
+
+      var otraVariable = function(){
+        console.log("Hello");
+      }
+
+      otraVariable();
+      
+      //Arrow function (Lambda)
+      var arrowFunction = () => {
+          console.log("Arrow function");
+      }
+
+      //Modalida 2: Pasar una función como argumento a otra función
+      function Function1(){
+        return "Function 1 ";
+      }
+      function Function2(a, b){
+        console.log(a, b);
+
+      }
+      Function2(Function1(), "soy otro parámetro");
+
+      //Modalidad 3
+      function Function3(){
+        let message = "Mensaje";
+        return function(){
+            console.log("I'm return function 3");
+        }
+      }
+    </script>
+  </body>
+</html>
