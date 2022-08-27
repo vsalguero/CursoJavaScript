@@ -45,9 +45,29 @@
       function Function3(){
         let message = "Mensaje";
         return function(){
-            console.log("I'm return function 3");
+             console.log("I'm return function 3");
         }
       }
+
+      //Function3()();
+      
+      //Funciones de orden superior
+      var array = new Array();
+      array.push(1);
+      array.push(10.5);
+      array.push("Something");
+      array.push({"alt1" : "Object", "alt2" : "Object"});
+      console.log(array);
+
+      var array2 = [{"alt1" : "Object", "alt2" : "Object"}, 10, 1.5, "Something"];
+
+      console.log(array2);
+
+      array.forEach((item, index) => {
+        console.log(index, " => ", item);
+
+      });
+
     </script>
   </body>
 </html>
