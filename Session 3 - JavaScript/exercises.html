@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <script>
+        function Calcular(){
+            const txtCompra = document.getElementsByTagName('txtCompra');
+            var monto = parseInt(txtCompra.value);
+            var descuento = monto * 0.1;
+            console.log("El DESCUENTO: ", descuento);
+        }
+        const btnAceptar = document.getElementsByTagName('btnAceptar');
+        btnAceptar.addEventListener('click', Calcular());
+    </script>
+</head>
+<body>
+    <form>
+        <label>Digite la compra</label>
+
+    <input type="text" name="txtCompra">
+
+    <input type="button" name="btnAceptar" value="Aceptar">
+    </form>
+    <script>
+
+    </script>
+</body>
+</html>
