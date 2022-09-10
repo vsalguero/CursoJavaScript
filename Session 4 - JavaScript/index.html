@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 2 Manejo del DOM</title>
+    
+  </head>
+  <body onload="javascript:CrearTabla();">
+    <div id="captura">
+      <fieldset>
+        <legend>Formulario de captura</legend>
+        <summary>
+          <form name="frmCaptura">
+            <label>Digite el id del cliente</label>
+            <input type="text" name="id" /><br />
+            <label>Digite el nombre del cliente</label>
+            <input type="text" name="nom" /><br />
+            <label>Digite el id del apellido</label>
+            <input type="text" name="ape" /><br />
+            <input
+              type="button"
+              value="Aceptar"
+              onclick="javascript:Aceptar()"
+            />
+            <input
+              type="button"
+              value="Cancelar"
+              onclick="javascript:Cancelar()"
+            />
+          </form>
+        </summary>
+      </fieldset>
+    </div>
+    <div id="principal">
+        <fieldset>
+            <p>
+                <input type="button" value="Agregar" onclick="javascript:Agregar()">
+                <input type="button" value="Eliminar" onclick="javascript:Eliminar()">
+            </p>
+            <div id="tabla"></div>
+        </fieldset>
+    </div>
+  </body>
+  <script src="functions.js"></script>
+</html>
