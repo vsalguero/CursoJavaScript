@@ -1,0 +1,42 @@
+body{
+    background-color: #d3d3d3;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#tbl{
+    margin: 0 auto;
+    width: 100%;
+    border:0;
+}
+
+#tbl td{
+    padding:6px;
+    border:1px solid #ddd;
+}
+
+legend{
+    font-size: 24;
+    font-weight: bold;
+}
+
+input[type=button]{
+    background-color: #020;
+    color: white;
+    padding: 5px;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+#errormessage {
+    font-weight: bold;
+    color:#ab0000;
+    margin-top:6px;
+}

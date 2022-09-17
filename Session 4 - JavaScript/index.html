@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejemplo 2 Manejo del DOM</title>
+    <link rel="stylesheet" href="style.css">
     
   </head>
   <body onload="javascript:CrearTabla();">
+    <div id="content">
+      <h1>Captura de datos</h1>
     <div id="captura">
       <fieldset>
         <legend>Formulario de captura</legend>
         <summary>
           <form name="frmCaptura">
-            <label>Digite el id del cliente</label>
+            <label>Digite el id del cliente</label><br>
             <input type="text" name="id" /><br />
-            <label>Digite el nombre del cliente</label>
+            <label>Digite el nombre del cliente</label><br>
             <input type="text" name="nom" /><br />
-            <label>Digite el id del apellido</label>
+            <label>Digite el apellido</label><br>
             <input type="text" name="ape" /><br />
+            <label>Fecha de nacimiento</label><br>
+            <input type="date" name="bdate" /><br /><br>
             <input
               type="button"
               value="Aceptar"
@@ -30,9 +35,10 @@
               onclick="javascript:Cancelar()"
             />
           </form>
+          <label id="errormessage"></label>
         </summary>
       </fieldset>
-    </div>
+   </div>
     <div id="principal">
         <fieldset>
             <p>
@@ -41,6 +47,7 @@
             </p>
             <div id="tabla"></div>
         </fieldset>
+    </div>
     </div>
   </body>
   <script src="functions.js"></script>
