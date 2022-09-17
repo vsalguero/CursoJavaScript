@@ -33,6 +33,18 @@ input[type=button]{
     padding: 5px;
     margin-top:5px;
     cursor:pointer;
+    border-radius:6px;
+}
+input[type=button]:hover{
+    background-color: #060;
+}
+
+input[type=text], input[type=date]{
+    padding: 5px;
+    border:1px solid #ddd;
+    border-radius: 6px;
+    margin:4px;
+    width: 300px;
 }
 
 #errormessage {
